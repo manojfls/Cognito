@@ -41,10 +41,13 @@ function* loginUser({ payload: { user, history } }) {
         yield put(apiError(response));
       }
     } else if (process.env.REACT_APP_API_URL) {
+
       const response = yield call(postFakeLogin, {
         email: user.email,
         password: user.password,
       });
+      console.log('in saga.js file');
+      console.log(response);
       if (response.status === "success") {
         yield put(loginSuccess(response));
         history('/dashboard');
