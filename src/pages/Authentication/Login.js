@@ -104,7 +104,7 @@ const Login = (props) => {
     }, [dispatch, error]);
 
 
-    document.title = "Basic SignIn | Velzon - React Admin & Dashboard Template";
+    document.title = "Cognito | Signin";
     return (
         <React.Fragment>
             <ParticlesAuth>
@@ -115,10 +115,10 @@ const Login = (props) => {
                                 <div className="text-center mt-sm-5 mb-4 text-white-50">
                                     <div>
                                         <Link to="/" className="d-inline-block auth-logo">
-                                            <img src={logoLight} alt="" height="20" />
+                                            <img src={logoLight} alt="" height="50" />
                                         </Link>
                                     </div>
-                                    <p className="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
+                                    <p className="mt-3 fs-15 fw-medium">Learning Management System</p>
                                 </div>
                             </Col>
                         </Row>
@@ -129,7 +129,7 @@ const Login = (props) => {
                                     <CardBody className="p-4">
                                         <div className="text-center mt-2">
                                             <h5 className="text-primary">Welcome Back !</h5>
-                                            <p className="text-muted">Sign in to continue to Velzon.</p>
+                                            <p className="text-muted">Sign in to continue to Cognito.</p>
                                         </div>
                                         {errorMsg && errorMsg ? (<Alert color="danger"> {errorMsg} </Alert>) : null}
                                         <div className="p-2 mt-4">
